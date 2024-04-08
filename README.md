@@ -40,5 +40,4 @@ During the development of this project, several challenges were encountered.
 
 3. **Cross-Browser Compatibility**: Ensuring consistent functionality and appearance across different web browsers presented a challenge. This was tackled by testing the website on multiple browsers and making adjustments to the CSS
 
-Each challenge was approached with a problem-solving mindset, and solutions were found through research, experimentation, and collaboration with peers and online communities.
-
+Each challenge was approached with a problem-solving mindset, and solutions were found through research, and experimentation. 

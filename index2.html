@@ -3,87 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <!-- Importing Roboto font from Google Fonts -->
+    <title>Anele's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Linking external CSS file -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header section containing navigation bar -->
     <header>
-        <nav>
-            <div class="logo">
-                <!-- Logo image -->
-                <img src="C:/Users/Shayne/Desktop/Mlab bootcamp/scr/logo.png" alt="Logo">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="C:/Users/Shayne/Desktop/Mlab bootcamp/scr/logo.png" alt="Logo" height="30">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul>
-                <!-- Navigation links -->
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
         </nav>
     </header>
 
-    <!-- Home section with background video -->
-    <section id="home">
-        <video id="hero-video" autoplay muted loop>
-            <!-- Video source -->
-            <source src="C:/Users/Shayne/Desktop/Mlab bootcamp/scr/video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <!-- Hero Content -->
-        <div class="hero-content">
-            <!-- Heading and introductory text -->
-            <h1> Hi... I'm <span class="highlight"> Anele </span></h1>
-            <p>Welcome to my <span class="highlight">digital </span> playground! 🚀 Aspiring web wizard here. Dive into my world of <span class="highlight"> coding </span>adventures. </p>
+    <section id="home" class="py-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <video id="hero-video" autoplay muted loop class="w-100">
+                        <source src="C:/Users/Shayne/Desktop/Mlab bootcamp/scr/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-lg-6 my-auto">
+                    <div class="hero-content">
+                        <h1> Hi... I'm <span class="highlight"> Anele </span></h1>
+                        <p>Welcome to my <span class="highlight">digital </span> playground! 🚀 Aspiring web wizard here. Let's Dive into my world of <span class="highlight">coding </span>adventures. </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- About section -->
-    <section id="about">
-        <div class="about-me">
-            <!-- About Me heading and description -->
-            <h2>About Me</h2>
-            <p>An aspiring Blockchain Devloper, who is drive by curiosity. I create smart contracts and decentralized applications(dApps), NFTs on the Ethereum and XRP Ledger.</p>
-        </div>
-        <div class="profile-image">
-            <!-- Profile image -->
-            <img src="C:/Users/Shayne/Desktop/Mlab bootcamp/scr/profile.jpg" alt="Profile Picture">
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>About Me</h2>
+                    <p>An aspiring Blockchain Developer, driven by curiosity. I create smart contracts and decentralized applications (dApps), NFTs on the Ethereum and XRP Ledger.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="C:/Users/Shayne/Desktop/Mlab bootcamp/scr/profile.jpg" alt="Profile Picture" class="img-fluid">
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer section -->
-    <footer>
-        <div class="contact-info">
-            <!-- Contact information -->
-            <h3>Contact Info</h3>
-            <p>Dr Matsepa drive, Spruitview</p>
-            <p>example@gmail.com</p>
-            <p>+27 998 7402</p>
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <div class="contact-info mb-4">
+                        <h3></h3>
+                        <table>
+                            <tr>
+                                <td>📍Johannesburg, Gauteng</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Get In Touch </h3>
+                        <form action="#" method="POST">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name and Surname:</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message:</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="additional-links">
-            <!-- Additional Links -->
-            <h3>Additional Links</h3>
-            <ul>
-                <!-- GitHub link -->
-                <li><a href="https://github.com/Anele0722" target="_blank"><img src="C:/Users/Shayne/Desktop/Mlab bootcamp/scr/github.png" alt="Github"></a></li>
-            </ul>
-        </div>
-        <div class="social-media">
-            <!-- Social Media links -->
-            <h3>Social Media</h3>
-            <ul>
-                <!-- Twitter and LinkedIn links -->
-                <li><a href="https://twitter.com/AneleShayne" target="_blank"><img src="C:/Users/Shayne/Desktop/Mlab bootcamp/scr/twitter.jpg" alt="Twitter"></a></li>
-                <li><a href="https://www.linkedin.com/in/aneletwala" target="_blank"><img src="C:/Users/Shayne/Desktop/Mlab bootcamp/scr/linkedin.png" alt="LinkedIn"></a></li>
-            </ul>
-        </div>
-        <div class="map">
-            <!-- Embed your map here -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14303.680179669042!2d28.194166999999997!3d-26.3290884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1712520057383!5m2!1sen!2sza" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="additional-links mb-4">
+                        <h3>Additional Links</h3>
+                        <ul>
+                            <li><a href="https://github.com/Anele0722" target="_blank"><img src="C:/Users/Shayne/Desktop/Mlab bootcamp/scr/github.png" alt="Github"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="social-media mb-4">
+                        <h3>Follow Me</h3>
+                        <ul>
+                            <li><a href="https://twitter.com/AneleShayne" target="_blank"><img src="C:/Users/Shayne/Desktop/Mlab bootcamp/scr/twitter.jpg" alt="Twitter"></a></li>
+                            <li><a href="https://www.linkedin.com/in/aneletwala" target="_blank"><img src="C:/Users/Shayne/Desktop/Mlab bootcamp/scr/linkedin.png" alt="LinkedIn"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14303.680179669042!2d28.194166999999997!3d-26.3290884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1712520057383!5m2!1sen!2sza" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

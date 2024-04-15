@@ -41,6 +41,18 @@ nav ul li a {
     color: #fff;
 }
 
+.navbar {
+    background-color: transparent !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
 section#home {
     height: 100vh; /* Fills the entire screen */
     position: relative;
@@ -52,60 +64,58 @@ section#home {
     text-align: center;
     color: #fff;
     animation: fadeIn 1s ease-in-out;
-        }
+}
 
-        .highlight {
-            color: #fd367e; /* Shade the text in pink */
-            font-weight: bold;
-            background-color: none; /* Highlight background color */
-        }
+.highlight {
+    color: #fd367e; /* Shade the text in pink */
+    font-weight: bold;
+    background-color: none; /* Highlight background color */
+}
 
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
 
-            100% {
-                opacity: 1;
-            }
-        }
+    100% {
+        opacity: 1;
+    }
+}
 
-        .hero-video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-        }
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
 
-        .hero-content {
-            z-index: 1;
-            font-size: 48px; /* Increase font size */
-            color: #fff; /* White color */
-            font-weight: bold; /* Make it bold */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow for better visibility */
-        }
+.hero-content {
+    z-index: 1;
+    font-size: 48px; /* Increase font size */
+    color: #fff; /* White color */
+    font-weight: bold; /* Make it bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text-shadow for better visibility */
+}
 
 video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 section#about {
     display: flex;
     padding: 50px;
-    
 }
 
 .about-me {
@@ -116,13 +126,11 @@ section#about {
 .profile-image {
     text-align: center;
     flex-shrink: 1;
-            
 }
 
 .profile-image img {
     border-radius: 50%; /* Creates circular border */
     width: 200px; /* Adjust as per your image size */
-    /*height: 200px; /* Adjust as per your image size */
 }
 
 footer {
@@ -152,21 +160,6 @@ footer h3 {
     margin-right: 10px; /* Add spacing between icons */
 }
 
-.google-map {
-     padding-bottom: 50%;
-     position: relative;
-}
-
-.google-map iframe {
-     height: 50%;
-     width: 60%;
-     left: 100;
-     top: 0;
-     position: absolute;
-}
-
-/* Additional CSS code */
-
 /* Styling for the 'Contact Info' section in the footer */
 .contact-info p {
     font-family: 'Roboto', sans-serif;
@@ -187,11 +180,8 @@ footer h3 {
 }
 
 .additional-links li {
-    /*width: 50px; /* Adjust to match the width of social media images */
-    /*height: 80px; /* Adjust to match the height of social media images */
     margin-right: 10px; /* Add spacing between icons */
     display: inline-block; /* Display icons horizontally */
-}
 }
 
 .additional-links a {
@@ -232,3 +222,76 @@ footer h3 {
 .social-media a:hover {
     color: #fd367e; /* Change color on hover */
 }
+
+/* Additional CSS code */
+
+/* Styling for the Google Map section in the footer */
+.map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.map iframe {
+    height: 100%; /* Adjust the height of the map */
+    width: 100%; /* Adjust the width of the map */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Additional CSS for responsiveness */
+
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .navbar-nav {
+        text-align: center; /* Center-align nav items */
+    }
+
+    .nav-item {
+        display: block; /* Display nav items vertically */
+        margin-bottom: 10px; /* Add spacing between nav items */
+    }
+
+    .nav-link {
+        padding: 10px; /* Add padding to nav links */
+    }
+
+    .logo img {
+        height: 40px; /* Decrease logo size for smaller screens */
+    }
+
+    .hero-content {
+        font-size: 32px; /* Decrease font size for smaller screens */
+    }
+
+    .profile-image img {
+        width: 150px; /* Decrease profile image size for smaller screens */
+    }
+
+    footer {
+        padding: 30px; /* Decrease footer padding for smaller screens */
+    }
+
+    .social-media img {
+        width: 25px; /* Decrease social media icon size for smaller screens */
+        height: 25px; /* Decrease social media icon size for smaller screens */
+    }
+
+    .additional-links img {
+        width: 25px; /* Decrease additional links icon size for smaller screens */
+        height: 25px; /* Decrease additional links icon size for smaller screens */
+    
+    }
+
+
+    .map {
+        padding-bottom: 100%; /* Adjust map padding for smaller screens */
+    }
+
+    .map iframe {
+        height: 100%; /* Adjust map height for smaller screens */
+        width: 100%; /* Adjust map width for smaller screens */
+    }
+}
+
+

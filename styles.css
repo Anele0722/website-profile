@@ -154,7 +154,7 @@ footer h3 {
 }
 
 /* Style the GitHub icon to match the size of social media images */
-.additional-links img {
+.projects img {
     width: 30px; /* Adjust to match the width of social media images */
     height: 30px; /* Adjust to match the height of social media images */
     margin-right: 10px; /* Add spacing between icons */
@@ -168,30 +168,30 @@ footer h3 {
 }
 
 /* Styling for the 'Additional Links' section in the footer */
-.additional-links h3 {
+.projects h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 18px; /* Adjust the font size */
     font-weight: bold; /* Make it bold */
     margin-bottom: 10px; /* Add spacing */
 }
 
-.additional-links ul {
+.projects {
     list-style-type: none; /* Remove bullet points */
 }
 
-.additional-links li {
+.projects li {
     margin-right: 10px; /* Add spacing between icons */
     display: inline-block; /* Display icons horizontally */
 }
 
-.additional-links a {
+.projects a {
     font-family: 'Roboto', sans-serif;
     font-size: 16px; /* Adjust the font size */
     text-decoration: none; /* Remove underline */
     color: #fff; /* Set text color */
 }
 
-.additional-links a:hover {
+.projects a:hover {
     color: #fd367e; /* Change color on hover */
 }
 
@@ -277,7 +277,7 @@ footer h3 {
         height: 25px; /* Decrease social media icon size for smaller screens */
     }
 
-    .additional-links img {
+    .projects img {
         width: 25px; /* Decrease additional links icon size for smaller screens */
         height: 25px; /* Decrease additional links icon size for smaller screens */
     

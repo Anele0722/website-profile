@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function handleFormSubmission(event) {
         event.preventDefault();
         // Fetch Formspree API URL
-        const formAction = 'https://formspree.io/ayneetwala@gmail.com'; // Replace with your Formspree email
+        const formAction = 'https:/formspree.io/f/mpzvkbzk/ayneetwala@gmail.com'; // Replace with Formspree email
         const form = event.target;
         const formData = new FormData(form);
         fetch(formAction, {

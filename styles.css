@@ -85,7 +85,7 @@ section#home {
             font-size: 48px; /* Increase font size */
             color: #fff; /* White color */
             font-weight: bold; /* Make it bold */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow for better visibility */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text-shadow for better visibility */
         }
 
 video {
@@ -146,7 +146,7 @@ footer h3 {
 }
 
 /* Style the GitHub icon to match the size of social media images */
-.additional-links img {
+.profile img {
     width: 30px; /* Adjust to match the width of social media images */
     height: 30px; /* Adjust to match the height of social media images */
     margin-right: 10px; /* Add spacing between icons */
@@ -175,18 +175,18 @@ footer h3 {
 }
 
 /* Styling for the 'Additional Links' section in the footer */
-.additional-links h3 {
+.profile h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 18px; /* Adjust the font size */
     font-weight: bold; /* Make it bold */
     margin-bottom: 10px; /* Add spacing */
 }
 
-.additional-links ul {
+.profile ul {
     list-style-type: none; /* Remove bullet points */
 }
 
-.additional-links li {
+.profile li {
     /*width: 50px; /* Adjust to match the width of social media images */
     /*height: 80px; /* Adjust to match the height of social media images */
     margin-right: 10px; /* Add spacing between icons */
@@ -194,14 +194,14 @@ footer h3 {
 }
 }
 
-.additional-links a {
+.profile a {
     font-family: 'Roboto', sans-serif;
     font-size: 16px; /* Adjust the font size */
     text-decoration: none; /* Remove underline */
     color: #fff; /* Set text color */
 }
 
-.additional-links a:hover {
+.profile a:hover {
     color: #fd367e; /* Change color on hover */
 }
 

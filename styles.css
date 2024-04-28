@@ -125,6 +125,11 @@ section#about {
     /*height: 200px; /* Adjust as per your image size */
 }
 
+
+section#contact {
+    display: none;
+}
+
 footer {
     background: linear-gradient(to right, #800080, #ffA500);
     padding: 50px;
